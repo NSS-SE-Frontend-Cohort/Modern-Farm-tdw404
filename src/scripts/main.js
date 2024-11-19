@@ -1,13 +1,11 @@
 import { createPlan } from "./plan.js"
-import { addPlant, usePlants } from "./field.js"
-import { createSoybean } from "./seeds/soybean.js"
-import { createCorn } from "./seeds/corn.js"
+import { plantSeeds } from "./tractor.js"
+import { usePlants } from "./field.js"
 
 
 console.log("Welcome to the main module")
- const yearlyPlan = createPlan()
-addPlant(createSoybean())
-addPlant(createCorn())
-addPlant(createSoybean())
+const yearlyPlan = createPlan()
+plantSeeds(yearlyPlan)
 const field = usePlants()
+console.log(yearlyPlan)
 console.log(field)
