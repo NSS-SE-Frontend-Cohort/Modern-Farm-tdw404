@@ -9,7 +9,7 @@ import { addPlant } from "./field.js"
 export const plantSeeds = (yearlyPlan) => {
     yearlyPlan.forEach(row => {
         row.forEach(crop => addPlant(seedPicker(crop)))
-    });
+    })
 }
 
 const seedPicker = (crop) => {
