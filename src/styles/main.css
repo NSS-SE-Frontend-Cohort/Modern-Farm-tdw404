@@ -34,3 +34,15 @@ h1,h2,h3,h4,h5,h6 {
     background-color: darksalmon;
 }
 
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, 100px);
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.plant {
+    border: solid;
+}

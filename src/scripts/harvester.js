@@ -1,20 +1,20 @@
-const seeds = []
+const harvest = []
 
 export const harvestPlants = (field) => {
     field.forEach(plant => seedYield(plant))
-    return seeds
+    return harvest
 }
 
 const seedYield = (plant) => {
     switch(plant.type) {
         case 'Corn' :
             for (let i = 0; i < plant.output/2; i ++) {
-                seeds.push(plant)
+                harvest.push(plant)
             }
             break
         default:
             for (let i = 0; i < plant.output; i ++) {
-                seeds.push(plant)
+                harvest.push(plant)
             }
     }
 }
