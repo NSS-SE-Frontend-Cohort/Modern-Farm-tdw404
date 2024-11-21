@@ -18,6 +18,16 @@ h1,h2,h3,h4,h5,h6 {
   letter-spacing: 2px;
 }
 
+div {
+    column-gap: 20px;
+    align-items: center;
+}
+
+table, th, td{
+    border: 1px solid;
+    border-collapse: collapse;
+  }
+
 .blue {
     background-color: aliceblue;
 }
@@ -36,7 +46,7 @@ h1,h2,h3,h4,h5,h6 {
 
 .container {
     display: grid;
-    grid-template-columns: repeat(5, 100px);
+    grid-template-columns: repeat(3, 100px);
     font-family: "Times New Roman", Times, serif;
     font-size: 20px;
     padding: 20px;
@@ -46,3 +56,7 @@ h1,h2,h3,h4,h5,h6 {
 .plant {
     border: solid;
 }
+
+.column {
+    float: left;
+  }
