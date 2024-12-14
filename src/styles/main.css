@@ -23,6 +23,11 @@ div {
     align-items: center;
 }
 
+img {
+    height: 40%;
+    width: 40%;
+  }
+
 table, th, td{
     border: 1px solid;
     border-collapse: collapse;
